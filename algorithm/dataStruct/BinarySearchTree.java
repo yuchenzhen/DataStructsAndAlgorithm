@@ -4,7 +4,7 @@ public class BinarySearchTree {
     BinaryIndexTree left;
     BinaryIndexTree right;
 
-    public void Node (val) {
+    public void Node (int val) {
 
     }
   }

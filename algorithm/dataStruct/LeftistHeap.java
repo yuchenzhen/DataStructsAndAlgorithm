@@ -29,7 +29,7 @@ public class LeftistHeap {
 
     // 如果"x的左孩子为空" 或者 "x的左孩子的npl<右孩子的npl"
     // 则，交换x和y
-    if (x.left == null || x.left.npl < x.right.xpl) {
+    if (x.left == null || x.left.npl < x.right.npl) {
       ListNode tempSwitch = x.left;
       x.left = x.right;
       x.right = tempSwitch;
@@ -43,9 +43,9 @@ public class LeftistHeap {
     return x;
   }
 
-  public void merge(LeftistHeap right) {
-    this.Root = merger(this.Root, right.Root);
-  }
+//  public void merge(ListNode right) {
+//    this.Root = merger(this.Root, right.Root);
+//  }
 
   public void insert(int key) {
     ListNode newNode = new ListNode(key, null, null);

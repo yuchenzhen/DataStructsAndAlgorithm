@@ -1,2 +1,5 @@
 test/
 .vscode
+*.class
+*/**/*.class
+.idea/

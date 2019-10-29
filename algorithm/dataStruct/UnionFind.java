@@ -6,7 +6,7 @@ public class UnionFind {
 
     private Node() {
       parent = 1;
-      root = true;
+      this.isRoot = true;
     }
   }
 
